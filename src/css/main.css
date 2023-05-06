@@ -68,6 +68,11 @@ header > section > ul > li {
     right: -18%;
 }
 
+#me {
+    position: relative;
+    top: -23em;
+}
+
 main {
     width: 100%;
     display: flex;
@@ -76,4 +81,7 @@ main {
 
 main > section {
     width: 50%;
+}
+
+p {
 }
