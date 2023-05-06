@@ -1,5 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+:root{ 
+    --screen-height: 100vh;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: 13vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    background-color: transparent;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+header > section > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+header > section > ul > li {
+    list-style: none;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-right: 3em;
+    font-size: 16px;
+}
+
+#contact-btn {
+    height: 5vh;
+    width: 11vw;
+    min-width: 11vw;
+    background-color: #8AA913;
+    border: none;
+    border-radius: 100px;
+    justify-self: end;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    position: relative;
+    z-index: 100;
+}
+
+#contact-btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: .5s;
+}
+
+#picture-sect{
+    height: 14.5em;
+    width: 46em;
+    background-color: #8AA913;
+    border-radius: 200px;
+    position: relative; 
+    top: calc(var(--screen-height)/3);
+    right: -18%;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+main > section {
+    width: 50%;
 }
